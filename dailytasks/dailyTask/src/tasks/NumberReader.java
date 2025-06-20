@@ -16,6 +16,7 @@ public class NumberReader {
        }
         if(countDigit(number) == 3L && number == 100L) return readHundred();
 //           if(countDigit(number) == 3L && number != 100L) return
+//           ToBeContinued ....
        return "";
     }
 
