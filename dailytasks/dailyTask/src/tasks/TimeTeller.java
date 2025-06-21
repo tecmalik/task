@@ -24,10 +24,6 @@ public class TimeTeller {
         return hour < 1 || hour > 12 && !digits[1].matches("^(?:(?:[0-5]?\\d|60)(?i)(am|pm)|(?:[0-5]?\\d|60))$");
     }
 
-    private static boolean isABoolean(String[] digits) {
-        return digits[1].length() > 2;
-    }
-
     private static long checkForAbbreviation(String[] digits) {
 
         if (digits[1].matches("(?i).*(am|pm).*")){
